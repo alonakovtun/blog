@@ -1,0 +1,35 @@
+.related{
+    padding: 3rem 0 .5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #1C1C1C;
+}
+
+.related_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.related_list_item{
+    width: 50%;
+    margin-bottom: 2.5rem;
+}
+
+.related_list_title{
+    color: #F3EBA2;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    a {
+        color: inherit;
+    }
+}
+
+.related_list_date{
+    color: #828282;
+    font-style: 1.2rem;
+
+}
