@@ -14,7 +14,7 @@
     
     <title>Works</title>
 </head>
-<body class="no-scroll">
+<body>
 
     <div class="page">
 
@@ -36,11 +36,15 @@
                     </ul>
                 </nav>
             </div>
+        
+            <button class="burger" type="button">
+                <span>Open navigation</span>
+            </button>
             <div class="header_right">
                 <nav class="nav">
                     <ul  class="nav_list">
                         <li  class="nav_item"><a class="nav_link" href="profile.html">Profile</a></li>
-                        <li  class="nav_item"><a class="nav_link" href="#">Go out</a></li>
+                        <li  class="nav_item"><a class="nav_link" href="#">Log out</a></li>
                     </ul>
                 </nav>
                 <form class="search" action="search.html" method="GET">
@@ -57,9 +61,11 @@
         
           <div class="sidebar_content">
             <div class="profile">
-              <img class="profile_avatar" src="https://placehold.it/100" alt="" />
+            <img class="profile_avatar" src="../assets/images/grey.jpg" alt="" />
+            <div class="profile_header">
               <div class="profile_name">Alona Kovtun</div>
               <div class="profile_prof">front-end developer blog</div>
+            </div>
         
               <ul class="social">
                 <li class="social_item">
@@ -86,6 +92,23 @@
                 </p>
               </div>
             </div> <!-- profile -->
+        
+            <nav class="nav nav--mobile">
+              <ul class="nav_list">
+                  <li class="nav_item"><a class="nav_link" href="index.html">Home</a></li>
+                  <li class="nav_item"><a class="nav_link has-subnav" href="#">Articles</a>
+                      <ul class="subnav">
+                          <li><a class="subnav_link" href="#">Article1</a></li>
+                          <li><a class="subnav_link" href="#">Article2</a></li>
+                          <li><a class="subnav_link" href="#">Article3</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav_item"><a class="nav_link" href="text.html">About me</a></li>
+                  <li class="nav_item"><a class="nav_link" href="text.html">Advertising</a></li>
+                  <li class="nav_item"><a class="nav_link" href="profile.html">Profile</a></li>
+                  <li class="nav_item"><a class="nav_link" href="#">Log out</a></li>
+              </ul>
+          </nav>
           </div> <!-- sidebar_content -->
         
           <div class="sidebar_footer">
@@ -105,7 +128,11 @@
                 
                 <article class="work">
                     <div class="work_preview">
-                        <img src="assets/images/work1.jpg" alt="" />
+                        <picture>
+                            <source srcset="https://www.yarkiy.ru//system/uploads/preview/good/25601/58_slate_grey.jpg" style="height: 150px; width: 575px;" media="(max-width: 575px)">
+                            <img src="assets/images/work1.jpg" alt="" />
+                        </picture>
+                        
                     </div>
                     <div class="work_content">
                         <h2 class="work_title"><a href="#" target="blank">altermono.com</a></h2>
@@ -129,7 +156,10 @@
                 
                 <article class="work">
                     <div class="work_preview">
-                      <img src="assets/images/work2.jpg" alt="" />
+                        <picture>
+                            <source srcset="https://www.yarkiy.ru//system/uploads/preview/good/25601/58_slate_grey.jpg" style="height: 150px; width: 575px;" media="(max-width: 575px)">
+                                <img src="assets/images/work2.jpg" alt="" />
+                        </picture>
                     </div>
                     <div class="work_content">
                         <h2 class="work_title"><a href="#" target="blank">codedoco.com</a></h2>
