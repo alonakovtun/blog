@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.min.css">
@@ -14,9 +15,10 @@
     
     <title>Post</title>
 </head>
+
 <body>
 
-    <div class="page">
+    <div class="page" id="page">
 
         <!-- Header -->
         <header class="header">
@@ -37,14 +39,14 @@
                 </nav>
             </div>
         
-            <button class="burger" type="button">
+            <button class="burger" type="button" id="sidebarToggle">
                 <span>Open navigation</span>
             </button>
             <div class="header_right">
                 <nav class="nav">
-                    <ul  class="nav_list">
-                        <li  class="nav_item"><a class="nav_link" href="profile.html">Profile</a></li>
-                        <li  class="nav_item"><a class="nav_link" href="#">Log out</a></li>
+                    <ul class="nav_list">
+                        <li class="nav_item"><a class="nav_link" href="profile.html">Profile</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Log out</a></li>
                     </ul>
                 </nav>
                 <form class="search" action="search.html" method="GET">
@@ -52,74 +54,73 @@
                 </form>
             </div>
         </header>
-
         <!-- Sidebar -->
-        <aside class="sidebar">
-          <div class="sidebar_header">
-            <img src="assets/images/sidebar_header.jpg" alt="" />
-          </div>
-        
-          <div class="sidebar_content">
-            <div class="profile">
-            <img class="profile_avatar" src="../assets/images/grey.jpg" alt="" />
-            <div class="profile_header">
-              <div class="profile_name">Alona Kovtun</div>
-              <div class="profile_prof">front-end developer blog</div>
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar_header">
+                <img src="assets/images/sidebar_header.jpg" alt="" />
             </div>
         
-              <ul class="social">
-                <li class="social_item">
-                  <a class="social_link" href="#" target="_blank">
-                    <img src="assets/images/instagram.svg" alt="" />
-                  </a>
-                </li>
-                <li class="social_item">
-                  <a class="social_link" href="#" target="_blank">
-                    <img src="assets/images/vk.svg" alt="" />
-                  </a>
-                </li>
-                <li class="social_item">
-                  <a class="social_link" href="#" target="_blank">
-                    <img src="assets/images/pinterest.svg" alt="" />
-                  </a>
-                </li>
-              </ul>
+            <div class="sidebar_content">
+                <div class="profile">
+                    <img class="profile_avatar" src="../assets/images/grey.jpg" alt="" />
+                    <div class="profile_header">
+                        <div class="profile_name">Alona Kovtun</div>
+                        <div class="profile_prof">front-end developer blog</div>
+                    </div>
         
-              <div class="profile_text">
-                <p>
-                  Front-end developer. Website layout practitioner. Website creation
-                  I have been doing it since 2019.
-                </p>
-              </div>
-            </div> <!-- profile -->
+                    <ul class="social">
+                        <li class="social_item">
+                            <a class="social_link" href="#" target="_blank">
+                                <img src="assets/images/instagram.svg" alt="" />
+                            </a>
+                        </li>
+                        <li class="social_item">
+                            <a class="social_link" href="#" target="_blank">
+                                <img src="assets/images/vk.svg" alt="" />
+                            </a>
+                        </li>
+                        <li class="social_item">
+                            <a class="social_link" href="#" target="_blank">
+                                <img src="assets/images/pinterest.svg" alt="" />
+                            </a>
+                        </li>
+                    </ul>
         
-            <nav class="nav nav--mobile">
-              <ul class="nav_list">
-                  <li class="nav_item"><a class="nav_link" href="index.html">Home</a></li>
-                  <li class="nav_item"><a class="nav_link has-subnav" href="#">Articles</a>
-                      <ul class="subnav">
-                          <li><a class="subnav_link" href="#">Article1</a></li>
-                          <li><a class="subnav_link" href="#">Article2</a></li>
-                          <li><a class="subnav_link" href="#">Article3</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav_item"><a class="nav_link" href="text.html">About me</a></li>
-                  <li class="nav_item"><a class="nav_link" href="text.html">Advertising</a></li>
-                  <li class="nav_item"><a class="nav_link" href="profile.html">Profile</a></li>
-                  <li class="nav_item"><a class="nav_link" href="#">Log out</a></li>
-              </ul>
-          </nav>
-          </div> <!-- sidebar_content -->
+                    <div class="profile_text">
+                        <p>
+                            Front-end developer. Website layout practitioner. Website creation I have been doing it since 2019.
+                        </p>
+                    </div>
+                </div>
+                <!-- profile -->
         
-          <div class="sidebar_footer">
-              <a class="btn btn_red" href="works.html"> My works</a>
+                <nav class="nav nav--mobile">
+                    <ul class="nav_list">
+                        <li class="nav_item"><a class="nav_link" href="index.html">Home</a></li>
+                        <li class="nav_item"><a class="nav_link has-subnav" href="#">Articles</a>
+                            <ul class="subnav">
+                                <li><a class="subnav_link" href="#">Article1</a></li>
+                                <li><a class="subnav_link" href="#">Article2</a></li>
+                                <li><a class="subnav_link" href="#">Article3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_item"><a class="nav_link" href="text.html">About me</a></li>
+                        <li class="nav_item"><a class="nav_link" href="text.html">Advertising</a></li>
+                        <li class="nav_item"><a class="nav_link" href="profile.html">Profile</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Log out</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- sidebar_content -->
         
-              <button class="btn btn_blue">Write me</button>
-          </div>
+            <div class="sidebar_footer">
+                <a class="btn btn_red" href="works.html"> My works</a>
         
-          <div class="sidebar_footer"></div>
+                <button class="btn btn_blue" data-modal="contact_modal">Text me</button>
+            </div>
+        
+            <div class="sidebar_footer"></div>
         </aside>
-
         <!-- Main -->
         <main class="main">
             <div class="container">
@@ -146,26 +147,21 @@
                     <div class="post_content">
                         <div class="post_text">
                             <h2>Title h2</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste minus omnis 
-                                psum quasi tenetur. Totam ea ipsam vel modi neque quas illo, maxime molestias 
-                                placeat dignissimos vero fugit fuga cumque.
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste minus omnis psum quasi tenetur. Totam ea ipsam vel modi neque quas illo, maxime molestias placeat dignissimos vero fugit fuga cumque.
                             </p>
                 
                             <h3>Title h3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste minus omnis 
-                                psum quasi tenetur. Totam ea ipsam vel modi neque quas illo, maxime molestias 
-                                placeat dignissimos vero fugit fuga cumque.
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste minus omnis psum quasi tenetur. Totam ea ipsam vel modi neque quas illo, maxime molestias placeat dignissimos vero fugit fuga cumque.
                             </p>
                 
                             <h4>Title h4</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores tenetur 
-                                adipisci accusamus, ad, maiores consequuntur perferendis nam tempore deleniti 
-                                qui alias facilis quia officia dolorem nulla ab laboriosam, perspiciatis debitis!
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores tenetur adipisci accusamus, ad, maiores consequuntur perferendis nam tempore deleniti qui alias facilis quia officia dolorem nulla ab laboriosam, perspiciatis debitis!
                             </p>
                             <p>
                                 <img src="assets/images/image.jpg" alt="">
                             </p>
-                        </div><!-- /.post_text -->
+                        </div>
+                        <!-- /.post_text -->
                         <div class="related">
                             <h3 class="post_subtitle">Interesting to read</h3>
                 
@@ -195,17 +191,18 @@
                                     <time class="related_list_date" datetime="2020-06-21 19:21">21.06.2020</time>
                                 </li>
                             </ul>
-                        </div><!-- /.post_related -->
+                        </div>
+                        <!-- /.post_related -->
                 
                         <h3 class="post_subtitle">Discussion</h3>
-                            
+                
                         <form class="form" method="POST" action="/">
                             <div class="form_group">
-                                <textarea class="form_control form_control_textarea" name="comment_text" placeholder="Comment text" ></textarea>
+                                <textarea class="form_control form_control_textarea" name="comment_text" data-autoresize placeholder="Comment text"></textarea>
                                 <span class="form_line"></span>
                             </div>
                             <button class="btn btn_blue btn_rounded btn_sm" type="submit">Send message</button>
-                                
+                
                         </form>
                         <ul class="comment">
                             <li class="comment_item">
@@ -220,9 +217,7 @@
                                     </div>
                                 </div>
                                 <div class="comment_text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestias officia 
-                                    voluptate id laudantium. Quidem modi cupiditate consectetur dolor? Dolorum, soluta 
-                                    eos. Atque natus harum enim nostrum, provident libero laboriosam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestias officia voluptate id laudantium. Quidem modi cupiditate consectetur dolor? Dolorum, soluta eos. Atque natus harum enim nostrum, provident libero laboriosam!
                                 </div>
                                 <button class="comment_reply" type="button">reply</button>
                 
@@ -239,25 +234,100 @@
                                             </div>
                                         </div>
                                         <div class="comment_text">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestias officia 
-                                            voluptate id laudantium. Quidem modi cupiditate consectetur dolor? Dolorum, soluta 
-                                            eos. Atque natus harum enim nostrum, provident libero laboriosam!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestias officia voluptate id laudantium. Quidem modi cupiditate consectetur dolor? Dolorum, soluta eos. Atque natus harum enim nostrum, provident libero laboriosam!
                                         </div>
                                         <button class="comment_reply" type="button">reply</button>
                                     </li>
-                                </ul><!-- /.comment -->
+                                </ul>
+                                <!-- /.comment -->
                             </li>
-                        </ul><!-- /.comment -->
+                        </ul>
+                        <!-- /.comment -->
                 
-                    </div><!-- /.post_content -->
-                </article><!-- /.post -->
-                
-                
+                    </div>
+                    <!-- /.post_content -->
+                </article>
+                <!-- /.post -->
             </div>
         </main>
     </div>
 
+    <div class="modal" id="story_modal">
+    <div class='modal_content modal_content--story'>
+        <video src="" class="modal_video" poster="https://placehold.it/420x580"></video>
+    </div>
+</div> <div class="modal" id="contact_modal">
+    <div class="modal_content modal_content--contact">
+        <button class="modal_close" type="button">
+            <img src="assets/images/close.svg" alt="Close">
+        </button>
+        <form class="form" action="/" method="POST">
+            <div class="form_group form_group_md">
+                <input class="form_control" type="text" placeholder="Your name">
+                <span class="form_line"></span>
+            </div>
+        
+            <div class="form_group form_group_md">
+                <input type="email" class="form_control" placeholder="Your Email">
+                <span class="form_line"></span>
+            </div>
+        
+            <div class="form_group form_group_md">
+                <textarea class="form_control form_control_textarea" placeholder="Message text" ></textarea>
+                <span class="form_line"></span>
+            </div>
+        
+            <div class="form_footer ">
+                <div class="form_group form_group_md">
+                    <button class="btn btn_rounded btn_blue btn_sm" type="submit">Send Message</button>
+                </div>
+        
+                <ul class="modal_footer">
+                    <li>
+                        e-mail: <a href="mailto:info@mywebsite.ru">info@mywebsite.ru </a>
+                    </li>
+            
+                    <li>
+                        тел: <a href="tel:+94323285622"> +943-232-856-22</a>
+                    </li>
+                </ul>           
+            </div>
+        </form>
+    </div><!-- /.modal_content -->
+</div><!-- /.modal --> <div class="modal">
+    <div class="modal_content">
+        <button class="modal_close" type="button">
+            <img src="assets/images/close.svg" alt="Close">
+        </button>
+        
+        <ul class="social">
+            <li class="social_item">
+              <a class="social_link" href="#" >
+                <img src="assets/images/share/facebook.svg" alt="" />
+              </a>
+            </li>
+            <li class="social_item">
+              <a class="social_link" href="#" >
+                <img src="assets/images/share/twitter.svg" alt="" />
+              </a>
+            </li>
+            <li class="social_item">
+              <a class="social_link" href="#" >
+                <img src="assets/images/share/vk.svg" alt="" />
+              </a>
+            </li>
+            <li class="social_item">
+                <a class="social_link" href="#" >
+                  <img src="assets/images/share/copy.svg" alt="" />
+                </a>
+              </li>
+          </ul> 
+
+    </div><!-- /.modal_content -->
+</div><!-- /.modal -->
+
     <!-- JS -->
     <script src="assets/js/app.js"></script>
 </body>
+
 </html>

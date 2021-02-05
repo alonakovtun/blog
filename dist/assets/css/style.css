@@ -366,14 +366,20 @@ html {
 
 body {
     background-color: #181818;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1.4rem;
     color: #fff;
     line-height: 1.5;
 }
 
-body.no-scroll, body.show-sidebar {
+body.no-scroll {
     overflow: hidden;
+}
+
+@media screen and (max-width: 991px) {
+    body.show-sidebar {
+        overflow: hidden;
+    }
 }
 
 *,
@@ -406,18 +412,6 @@ a:hover {
     .show-sidebar .page {
         position: relative;
     }
-
-    .show-sidebar .page:after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 100;
-    }
 }
 
 .page_title {
@@ -428,6 +422,19 @@ a:hover {
 
 .page_title_center {
     text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+    .page_mask {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
 }
 
 .header {
@@ -1785,6 +1792,11 @@ a:hover {
     z-index: 1010;
 }
 
+.modal.show {
+    display: -ms-flexbox;
+    display: flex;
+}
+
 .modal_content {
     width: 100%;
     max-width: 50rem;
@@ -1792,10 +1804,27 @@ a:hover {
     position: relative;
     background-color: #202020;
     border-radius: 5px;
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    transition: opacity .2s linear, -webkit-transform .2s linear;
+    transition: transform .2s linear, opacity .2s linear;
+    transition: transform .2s linear, opacity .2s linear, -webkit-transform .2s linear;
+}
+
+@media screen and (max-width: 991px) {
+    .modal_content {
+        padding: 5rem 3rem 3rem;
+    }
 }
 
 .modal_content--contact {
     padding-bottom: 2.5rem;
+}
+
+.modal_content--story {
+    padding: 0;
+    background: none;
 }
 
 .modal_close {
@@ -1839,6 +1868,11 @@ a:hover {
 
 .modal_footer a:hover {
     text-decoration: none;
+}
+
+.modal_video {
+    display: block;
+    margin: 0 auto;
 }
 
 .burger {

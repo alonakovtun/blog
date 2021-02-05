@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     {{> head }}
 </head>
+
 <body>
 
-    <div class="page">
+    <div class="page" id="page">
 
         <!-- Header -->
         {{> header }}
@@ -21,7 +23,10 @@
         </main>
     </div>
 
+    {{> story_modal }} {{> contact_modal }} {{> share_modal }}
+
     <!-- JS -->
     <script src="assets/js/app.js"></script>
 </body>
+
 </html>
